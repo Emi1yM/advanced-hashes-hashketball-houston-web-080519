@@ -100,7 +100,7 @@ def game_hash
             ] }
   }
 end
-
+require 'pry'
 def num_points_scored(sought_player_name)
   game_hash.each do |_place, team|
     team.each do |attribute, data|
@@ -112,7 +112,7 @@ def num_points_scored(sought_player_name)
     end
   end
 end
-
+binding.pry
 def shoe_size(sought_player_name)
   game_hash.each do |_place, team|
     team.each do |attribute, data|
